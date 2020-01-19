@@ -1,0 +1,19 @@
+body{
+    background: transparent linear-gradient(180deg, #0575E6C4 0%, #9FCFFF 0%, #8A6AB9 100%, #001103 100%) 0% 0% no-repeat padding-box;
+}
+
+.navbar {
+    background-color: #006ba6;
+}
+
+.navbar .nav-link{
+    color: white !important;
+    font-size: 1.5em;
+}
+#promo{
+    background-color: #46237A;
+}
+
+.content{
+    background-color: white;
+}
