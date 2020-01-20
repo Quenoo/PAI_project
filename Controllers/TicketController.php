@@ -6,11 +6,21 @@ class TicketController extends AppController {
 
     public function TicketTypes()
     {
-        // TODO: get database conection and print promoted
+        $this->render('Ticket');
+    }
+
+    public function SaveTickets()
+    {
         if (!empty($_POST)) 
         {
-            var_dump($_POST);
+            $_SESSION['TicketsTypes'] = [$_POST];
+            var_dump($_SESSION['TicketsTypes']);
+
+            if(!isset($_SESSION['user']))
+            {
+                var_dump('Trzeba sie zalogowac'); // render LogowanieView
+            }
         }
-        $this->render('Ticket');
+        $this->render('Login');
     }
 }

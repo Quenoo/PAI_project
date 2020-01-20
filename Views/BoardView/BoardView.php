@@ -3,9 +3,9 @@
 <html lang="pl">
     <head>
         <title>Title Page</title>
-        <link rel="stylesheet" type="text/css" href="../Public/css/board.css"">
         <!-- <script type='text/javascript' src="../Public/js/Board.css"></script> -->
         <?php include(dirname(__DIR__).'/Common/Head.php'); ?>
+        <link rel="stylesheet" type="text/css" href="../Public/css/board.css"">
      </head>
     <body>
     <div class="container">
@@ -60,7 +60,7 @@
                 </p>
                 <p>
                     <span class="text-left">IG TW FB WEB</span>
-                    <span class="float-right"><a href="?page=tickets&param2=WydarzenieID">BILETY</a></span>
+                    <span class="float-right"><a href="?page=tickets&eventID=WydarzenieID">BILETY</a></span>
                 </p>
             </div>
         </div>

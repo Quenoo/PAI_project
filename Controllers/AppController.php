@@ -22,16 +22,15 @@ class AppController {
     function GetViewName()
     {
         $name = explode('Controller', get_class($this));
-        $name = $name.'View';
-        return $name[0];
+        $name = $name[0].'View';
+        return $name;
     }
 
     protected function render(string $template = null, array $variables = [])
     {
-        // $templatePath = $template ? dirname(__DIR__).'//Views//'.get_class($this).'//'. $template.'.php' : '';
         $name = $this->GetViewName();
-        $templatePath = $template ? dirname(__DIR__).'\\Views\\'.$template.'View\\'.$template.'View'.'.php' : '';
-        $output = 'File not found';
+        $templatePath = $template ? dirname(__DIR__).'\\Views\\'.$name.'\\'.$template.'View'.'.php' : '';
+        $output = 'File not found'.' '.$templatePath;
         
         if(file_exists($templatePath)){
             extract($variables);

@@ -16,6 +16,10 @@ class Routing {
             'tickets' => [
                 'controller' => 'TicketController',
                 'action' => 'TicketTypes'
+            ],
+            'payTickets' => [
+                'controller' => 'TicketController',
+                'action' => 'SaveTickets'
             ]
         ];
     }
