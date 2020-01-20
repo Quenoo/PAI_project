@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!-- TODO Repair form broblem (not fully streached), add icons, implement php foreach -->
 <html lang="">
     <head>
         <title>Title Page</title>
         <link rel="stylesheet" type="text/css" href="../Public/css/board.css"">
+        <!-- <script type='text/javascript' src="../Public/js/Board.css"></script> -->
         <?php include(dirname(__DIR__).'/Common/Head.php'); ?>
      </head>
     <body>
@@ -17,16 +19,16 @@
         <div class="row content py-2">
             <div class="col-12 colored"><h1 class="text-center">Witaj w Polskim Centrum Wydarzeń!</h1></div>
         </div>
-        <form action="?page=login" method="POST">
+        <form method="POST" class='mb-0'> <!--action="?page=login" -->
             <div class="form-row content">
                 <div class="col-3">
-                    <input type="text" class="form-control" placeholder="Nazwa wydarzenia/słowa kluczowe">
+                    <input type="text" class="form-control" placeholder="Nazwa wydarzenia/słowa kluczowe" name="EventName">
                 </div>
                 <div class="col-3">
-                    <input type="date" class="form-control" placeholder="Data">
+                    <input type="date" class="form-control" placeholder="Data" name="EventDate">
                 </div>
                 <div class="col-3">
-                    <select class="custom-select" id="inlineFormCustomSelect">
+                    <select class="custom-select" id="inlineFormCustomSelect" name="EventType">
                         <option hidden>Typ wydarzenia</option>
                         <option value="1">Koncert</option>
                         <option value="2">Spektakl</option>
@@ -34,7 +36,7 @@
                     </select>
                 </div>
                 <div class="col-3">
-                    <button type="submit" class="btn btn-primary btn-block" name="BoardSearch">-></button>
+                    <button type="submit" class="btn btn-primary btn-block">-></button>  <!--name="BoardSearch" -->
                 </div>
             </div>
         </form>
@@ -58,7 +60,7 @@
                 </p>
                 <p>
                     <span class="text-left">IG TW FB WEB</span>
-                    <span class="float-right">BILETY</span>
+                    <span class="float-right"><a href="?page=tickets&param2=WydarzenieID">BILETY</a></span>
                 </p>
             </div>
         </div>

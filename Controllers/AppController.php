@@ -19,7 +19,7 @@ class AppController {
         return $this->request === 'POST';
     }
 
-    protected function GetViewName()
+    function GetViewName()
     {
         $name = explode('Controller', get_class($this));
         $name = $name.'View';
@@ -28,13 +28,11 @@ class AppController {
 
     protected function render(string $template = null, array $variables = [])
     {
-
-
         // $templatePath = $template ? dirname(__DIR__).'//Views//'.get_class($this).'//'. $template.'.php' : '';
-        $name = GetViewName();
-        $templatePath = $template ? dirname(__DIR__).'//Views//'.$name.'//'. $template.'.php' : '';
+        $name = $this->GetViewName();
+        $templatePath = $template ? dirname(__DIR__).'\\Views\\'.$template.'View\\'.$template.'View'.'.php' : '';
         $output = 'File not found';
-                
+        
         if(file_exists($templatePath)){
             extract($variables);
             
