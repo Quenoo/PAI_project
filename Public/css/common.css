@@ -17,3 +17,25 @@ body{
 .content{
     background-color: white;
 }
+
+#logo{ 
+    text-align: center;
+    font-size: 46px;
+    text-shadow: 10px 10px 10px #FFFFFF29;
+}
+
+.wd100{
+    width: 100%;
+}
+
+.maxh600{
+    height: 300px;
+}
+
+.text {
+    background-color: #00000017;
+}
+
+/* .he100{
+    height: 100%;
+} */

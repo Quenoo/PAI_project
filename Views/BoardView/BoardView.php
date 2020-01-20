@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- TODO Repair form broblem (not fully streached), add icons, implement php foreach -->
-<html lang="">
+<html lang="pl">
     <head>
         <title>Title Page</title>
         <link rel="stylesheet" type="text/css" href="../Public/css/board.css"">
@@ -44,7 +44,7 @@
             <div class="col-3 colored">Pole Wyszukiwania 2</div>
             <div class="col-3 colored">Pole Wyszukiwania 3</div>
             <div class="col-2 colored">Strzałka</div> -->
-                <!-- for each -->
+                            <!-- for each -->
         <div class="row content pt-3">
             <div class="col colored pr-0 pl-2">
                 <img src="../Public/imgs/noc.jpg" class="img-responsive wd100" alt="Image">
