@@ -6,6 +6,7 @@ class TicketController extends AppController {
 
     public function TicketTypes()
     {
+        session_destroy(); // CHANGE THIS LATER!!!
         $this->render('Ticket');
     }
 
@@ -15,12 +16,14 @@ class TicketController extends AppController {
         {
             $_SESSION['TicketsTypes'] = [$_POST];
             var_dump($_SESSION['TicketsTypes']);
-
-            if(!isset($_SESSION['user']))
-            {
-                var_dump('Trzeba sie zalogowac'); // render LogowanieView
-            }
         }
-        $this->render('Login');
+        $url = "http://$_SERVER[HTTP_HOST]/";
+        header("Location: {$url}?page=requestTickets");
+        var_dump($url);
+    }
+
+    public function Pay(){
+        var_dump($_SESSION);
+        $this->render('Pay');
     }
 }

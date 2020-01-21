@@ -36,7 +36,7 @@
                 <p class="text-center">Ilość</p>
             </div>
         </div>
-        <form method="POST" action="?page=payTickets">
+        <form method="POST" action="?page=saveTickets"> <!--payTickets-->
             <div class="row mx-4 py-1 text">
                 <div class="col">
                     <p class="text-center">1</p>

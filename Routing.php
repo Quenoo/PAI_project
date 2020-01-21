@@ -2,6 +2,8 @@
 
 require_once 'Controllers\BoardController.php';
 require_once 'Controllers\TicketController.php';
+require_once 'Controllers\SecurityController.php';
+require_once 'Controllers\ProfileController.php';
 
 class Routing {
     private $routes = [];
@@ -17,9 +19,25 @@ class Routing {
                 'controller' => 'TicketController',
                 'action' => 'TicketTypes'
             ],
-            'payTickets' => [
+            'saveTickets' => [
                 'controller' => 'TicketController',
                 'action' => 'SaveTickets'
+            ],
+            'payTickets' => [
+                'controller' => 'TicketController',
+                'action' => 'Pay'
+            ],
+            'requestTickets' => [
+                'controller' => 'SecurityController',
+                'action' => 'CheckIfLogged'
+            ],
+            'login' => [
+                'controller' => 'SecurityController',
+                'action' => 'login'
+            ],
+            'profile' => [
+                'controller' => 'ProfileController',
+                'action' => 'GetUserTickets'
             ]
         ];
     }
