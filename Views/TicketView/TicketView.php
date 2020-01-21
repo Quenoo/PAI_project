@@ -9,12 +9,6 @@
      </head>
     <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12 colored mb-2">
-                <img src="../Public/imgs/People.svg">
-                <span id="logo" class="align-middle">CITYH</span>
-            </div>
-        </div>
         <?php include(dirname(__DIR__).'/Common/Navbar.php'); ?>
     </div>
     <div class="container content">

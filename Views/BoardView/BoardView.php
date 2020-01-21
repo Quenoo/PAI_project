@@ -9,13 +9,9 @@
      </head>
     <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12 colored mb-2">
-                <img src="../Public/imgs/People.svg">
-                <span id="logo" class="align-middle">CITYH</span>
-            </div>
-        </div>
         <?php include(dirname(__DIR__).'/Common/Navbar.php'); ?>
+    </div>
+    <div class="container content">
         <div class="row content py-2">
             <div class="col-12 colored"><h1 class="text-center">Witaj w Polskim Centrum Wydarzeń!</h1></div>
         </div>

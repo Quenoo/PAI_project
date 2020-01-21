@@ -1,6 +1,12 @@
 <div class="row">
+    <div class="col-12 colored mb-2">
+        <img src="../Public/imgs/People.svg">
+        <span id="logo" class="align-middle">CITYH</span>
+    </div>
+</div>
+<div class="row">
     <div class="col px-0">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark py-1">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,13 +27,13 @@
                         <a class="nav-link mr-5" href="#" id='promo'>PROMUJ!</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link inline" href="#">IC1</a>
+                        <a class="nav-link" href="#">IC1</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link inline" href="#">IC1</a>
+                        <a class="nav-link" href="#">IC1</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link inline" href="#">IC!</a>
+                        <a class="nav-link" href="#">IC!</a>
                     </li>
                 </ul>
         </nav>        
