@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-12 colored mb-2">
-        <img src="../Public/imgs/People.svg">
+        <a href="?page=board">
+            <img src="../Public/imgs/People.svg">
+        </a>
         <span id="logo" class="align-middle">CITYH</span>
     </div>
 </div>
@@ -20,6 +22,9 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">POLECANE</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link ml-5" href="?page=profile">PROFIL</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">

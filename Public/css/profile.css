@@ -1,0 +1,17 @@
+.hw200{
+    height: 200px;
+    width: 200px;
+}
+
+.form{
+    font-size: 1.5em;
+}
+
+.h150{
+    height: 150px;
+    /* width: 150px; */
+}
+
+.full-line{
+    border: 1px solid #707070;
+}
